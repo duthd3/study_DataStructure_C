@@ -25,7 +25,7 @@ int main(void)
 			break;
 
 		/*** 노드의 추가과정 ***/
-		newNode = (Node*)malloc(sizeof(Node));
+		newNode = (Node*)malloc(sizeof(Node)); 
 		newNode->data = readData;
 		newNode->next = NULL;
 
@@ -36,7 +36,7 @@ int main(void)
 			tail = newNode;
 		}	
 		else
-			newNode->next = head;
+			newNode->next = head; //노드가 머리에 추가되게 한다.
 
 		head = newNode;
 	}
